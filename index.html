@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Clone</title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+    <header class="bg-blue-600 text-white shadow-md">
+        <div class="container flex justify-between items-center">
+            <div class="flex items-center justify-start">
+                <img src="fb.png" width="65" height="65" alt="">
+                <div class="text-2xl font-bold">Facebook</div>
+            </div>
+            <div class="flex justify-center">
+                <div class="flex bg-white shadow-md px-3 py-2 w-full max-w-lg rounded-full">
+                    <input 
+                        type="text" 
+                        placeholder="Search" 
+                        class="px-5 py-1.5 text-black focus:outline-none truncate border-none rounded-full w-full">
+                    <img src="search.svg" alt="Search Icon" 
+                        class="transform -translate-y-1/2 w-[30px] h-[28px] cursor-pointer">
+                </div>
+            </div>
+            
+            <div class="flex items-center space-x-6 w-1/3 justify-end">
+                <a href="#" class="text-white hover:text-gray-300">Home</a>
+                <a href="#" class="text-white hover:text-gray-300">Profile</a>
+                <a href="#" class="text-white hover:text-gray-300">Messages</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow px-4 py-6 flex space-x-4">
+        <aside class="bg-white p-4 rounded-lg shadow md:block w-96 flex-shrink-0">
+            <h3 class="text-lg font-bold mb-4">Menu</h3>
+            <ul class="space-y-2">
+                <li><a href="#" class="block text-gray-700 hover:text-blue-600">Friends</a></li>
+                <li><a href="#" class="block text-gray-700 hover:text-blue-600">Groups</a></li>
+                <li><a href="#" class="block text-gray-700 hover:text-blue-600">Marketplace</a></li>
+                <li><a href="#" class="block text-gray-700 hover:text-blue-600">Watch</a></li>
+            </ul>
+        </aside>
+        <section class="flex-1 mx-auto max-w-full w-full">
+            <div class="bg-white p-4 rounded-lg shadow mb-6">
+                <textarea 
+                    placeholder="What's on your mind?" 
+                    class="w-full border rounded-lg p-3 focus:outline-none focus:ring focus:ring-blue-200"
+                ></textarea>
+                <button class="mt-2 bg-blue-600 text-white px-4 py-2 rounded-lg">Post</button>
+            </div>
+    
+            <div class="space-y-4">
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <h3 class="font-bold">Prateek</h3>
+                    <p class="text-gray-600">This is a sample post!</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <h3 class="font-bold">Kishan</h3>
+                    <p class="text-gray-600">Another post goes here.</p>
+                </div>
+            </div>
+        </section>
+    
+        <aside class="w-96 bg-white p-4 rounded-lg shadow hidden lg:block flex-shrink-0">
+            <h3 class="text-lg font-bold mb-4">Contacts</h3>
+            <ul class="space-y-2">
+                <li><a href="#" class="block text-gray-700">Mallikarjun</a></li>
+                <li><a href="#" class="block text-gray-700">Maradi</a></li>
+                <li><a href="#" class="block text-gray-700">Vivek</a></li>
+                <li><a href="#" class="block text-gray-700">Rohit</a></li>
+                <li><a href="#" class="block text-gray-700">Rakesh</a></li>
+                <li><a href="#" class="block text-gray-700">Naveen</a></li>
+                <li><a href="#" class="block text-gray-700">Dhanesh</a></li>
+                <li><a href="#" class="block text-gray-700">Sagar</a></li>
+            </ul>
+        </aside>
+    </main>
+    
+
+    <footer class="bg-blue-600 text-white py-4 text-center"> 
+        <div class="container mx-auto px-4">
+            &copy; 2023 Facebook Clone. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
